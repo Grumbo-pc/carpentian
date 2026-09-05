@@ -1,15 +1,9 @@
-# Carpentian OS
+# Carpentian 
 
-A custom Linux distribution based on Ubuntu LTS with GNOME desktop, featuring Windows 9x style window borders and a complete custom theme.
+A custom Linux distribution based on Ubuntu LTS with Cinnamon, featuring sabrina carpenter refrences.
 
 ## Features
-
-- **Base**: Ubuntu 24.04 LTS
-- **Desktop**: GNOME with dock at bottom of screen
-- **Window Borders**: Windows 9x style with beveled edges and gradient title bars
-- **Custom Theme**: Complete icon, cursor, and sound theme
-- **Boot Screen**: Custom splash image
-- **Neofetch Art**: Custom "SC" ASCII art
+Sabrina carpenter ahhh themed os
 
 ## Assets
 
