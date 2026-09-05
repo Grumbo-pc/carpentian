@@ -1,4 +1,4 @@
-# Carpentian 
+# Carpentian (yes i fixed the internet)
 
 A custom Linux distribution based on Ubuntu LTS with Cinnamon, featuring sabrina carpenter refrences.
 
