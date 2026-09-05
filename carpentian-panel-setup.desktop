@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Carpentian Panel Setup
+Exec=/usr/share/customscripts/carpentian-panel-setup.sh
+X-GNOME-Autostart-enabled=true
+OnlyShowIn=Cinnamon;

@@ -1,0 +1,8 @@
+{
+    "uuid": "carpentian-menu@carpentian",
+    "name": "Carpentian Menu",
+    "description": "Carpentian Win9x-style start menu",
+    "icon": "carpentian-menu",
+    "version": "1.0.0",
+    "max-instances": -1
+}

@@ -1,0 +1,173 @@
+CinnamenuAppletPopup {
+    background-color: #c0c0c0;
+    border: 2px outset #dfdfdf;
+    border-radius: 0;
+    padding: 0;
+}
+
+/* Full screen overlay */
+.cinnamenu-fullscreen {
+    background-color: #c0c0c0;
+    border: none;
+    border-radius: 0;
+}
+
+/* Sidebar - left blue bar like Win9x Start */
+.cinnamenu-sidebar {
+    background-color: #000080;
+    color: #ffffff;
+    border-right: 2px outset #808080;
+    border-radius: 0;
+    padding: 8px;
+}
+
+.cinnamenu-sidebar .app-list-item:selected,
+.cinnamenu-sidebar .app-list-item:hover {
+    background-color: #000080;
+}
+
+.cinnamenu-sidebar .category-button {
+    color: #ffffff;
+    background-color: #000080;
+    border: none;
+    border-radius: 0;
+    padding: 4px 8px;
+    font-weight: bold;
+}
+
+.cinnamenu-sidebar .category-button:hover,
+.cinnamenu-sidebar .category-button:selected {
+    background-color: #1084d0;
+}
+
+/* App grid area */
+.cinnamenu-apps-box {
+    background-color: #dfdfdf;
+    border-radius: 0;
+    padding: 4px;
+}
+
+.cinnamenu-app-list {
+    background-color: #dfdfdf;
+    border-radius: 0;
+}
+
+/* Application buttons - Win9x style */
+.app-list-item {
+    background-color: #c0c0c0;
+    color: #000000;
+    border: 1px outset #dfdfdf;
+    border-radius: 0;
+    padding: 4px 8px;
+    min-height: 32px;
+}
+
+.app-list-item:hover {
+    background-color: #000080;
+    color: #ffffff;
+}
+
+.app-list-item:selected {
+    background-color: #000080;
+    color: #ffffff;
+}
+
+/* App grid buttons */
+.app-grid-item {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 4px;
+}
+
+.app-grid-item:hover {
+    background-color: #000080;
+    border-radius: 0;
+}
+
+.app-grid-item .app-grid-item-label {
+    color: #000000;
+}
+
+.app-grid-item:hover .app-grid-item-label {
+    color: #ffffff;
+}
+
+/* Search bar */
+.cinnamenu-search-box {
+    background-color: #ffffff;
+    border: 2px inset #808080;
+    border-radius: 0;
+    padding: 4px;
+    color: #000000;
+}
+
+/* Category buttons in grid */
+.cinnamenu-categories-box {
+    background-color: #c0c0c0;
+    border: 2px outset #dfdfdf;
+    border-radius: 0;
+    padding: 4px;
+}
+
+/* Bottom bar with session buttons */
+.cinnamenu-bottom-bar {
+    background-color: #c0c0c0;
+    border-top: 2px outset #dfdfdf;
+    border-radius: 0;
+    padding: 4px;
+}
+
+/* Session/Power buttons */
+.cinnamenu-session-button {
+    background-color: #c0c0c0;
+    color: #000000;
+    border: 2px outset #dfdfdf;
+    border-radius: 0;
+    padding: 4px 12px;
+    min-height: 28px;
+}
+
+.cinnamenu-session-button:hover {
+    background-color: #000080;
+    color: #ffffff;
+}
+
+/* Scrollbar Win9x style */
+.scrollbar {
+    background-color: #c0c0c0;
+    border: 1px inset #808080;
+    border-radius: 0;
+}
+
+.scrollbar-slider {
+    background-color: #c0c0c0;
+    border: 2px outset #dfdfdf;
+    border-radius: 0;
+    min-width: 16px;
+}
+
+.scrollbar-slider:hover {
+    background-color: #d0d0d0;
+}
+
+/* Remove all rounded corners */
+.cinnamenu-search-box,
+.cinnamenu-apps-box,
+.cinnamenu-categories-box,
+.app-list-item,
+.app-grid-item,
+.cinnamenu-session-button {
+    border-radius: 0 !important;
+}
+
+/* Panel button style */
+.applet-button {
+    background-color: #c0c0c0;
+    border: 2px outset #dfdfdf;
+    border-radius: 0;
+    padding: 2px 8px;
+}
+
+.applet-button:hover {
+    background-color: #d0d0d0;
+}

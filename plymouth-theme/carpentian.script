@@ -1,0 +1,18 @@
+windowed_mode = 0;
+disable_tracing = 1;
+use_progress_log = 0;
+
+message_font = "Mono 14";
+title_font = "Sans Bold 16";
+
+message_color = 1.0, 1.0, 1.0;
+message_secondary_color = 1.0, 1.0, 1.0;
+
+background = Image("background.jpg");
+
+on boot (pid = 1) {
+    Plymouth.MoveCursor(0, 0);
+}
+
+on quit {
+}

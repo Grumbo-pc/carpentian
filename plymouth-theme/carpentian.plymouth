@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=Carpentian
+Description=Carpentian OS Boot Theme
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/carpentian
+ScriptFile=/usr/share/plymouth/themes/carpentian/carpentian.script

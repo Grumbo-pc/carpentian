@@ -1,0 +1,31 @@
+/* Carpentian fullscreen menu styling */
+
+.popup-menu {
+    background-color: #1a1a2e !important;
+    border-radius: 0 !important;
+    border: none !important;
+}
+
+.popup-menu-content {
+    background-color: #1a1a2e !important;
+    border-radius: 0 !important;
+}
+
+.popup-menu-item {
+    color: #ffffff !important;
+    border-radius: 0 !important;
+}
+
+.popup-menu-item:active {
+    background-color: #000080 !important;
+    color: #ffffff !important;
+}
+
+.popup-separator-menu-item {
+    border-color: #333355 !important;
+}
+
+.popup-menu-item:hover {
+    background-color: #000080 !important;
+    color: #ffffff !important;
+}
