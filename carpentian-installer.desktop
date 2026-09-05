@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Carpentian Installer
+Comment=Install Carpentian to your hard disk
+Exec=/usr/local/sbin/carpentian-installer.sh
+Hidden=false
+NoDisplay=true
+X-GNOME-Autostart-enabled=true
+X-KDE-autostart-after-restore=false
+StartupNotify=false

@@ -1,0 +1,6 @@
+[Allow carpentian to run ubiquity]
+Identity=unix-user:carpentian
+Action=org.freedesktop.policykit.exec;org.freedesktop.udisks2.*
+ResultAny=yes
+ResultInactive=yes
+ResultActive=yes

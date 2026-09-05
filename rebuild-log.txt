@@ -1,0 +1,249 @@
++ cd /root/carpentian-build
++ WORK=/tmp/iso-build
++ ISO=/root/carpentian-build/Carpentian-OS.iso
++ CHROOT=/root/carpentian-build/chroot
++ IMAGE=/root/carpentian-build/image
+++ sed 's|.*/vmlinuz-||;s|-generic||'
+++ ls /root/carpentian-build/chroot/boot/vmlinuz-6.8.0-138-generic
++ KVER=6.8.0-138
++ rm -rf /tmp/iso-build
++ mkdir -p /tmp/iso-build/iso/casper
++ mkdir -p /tmp/iso-build/iso/isolinux
++ mkdir -p /tmp/iso-build/iso/boot/grub
++ mkdir -p /tmp/iso-build/iso/EFI/boot
++ rm -f /root/carpentian-build/image/filesystem.squashfs
++ mkdir -p /root/carpentian-build/image/casper
++ mksquashfs /root/carpentian-build/chroot /root/carpentian-build/image/casper/filesystem.squashfs -comp xz -b 1M -e boot -noappend
+Source directory entry mnt already used! - trying mnt_1
+Source directory entry mnt_1 already used! - trying mnt_2
+Source directory entry var already used! - trying var_1
+Source directory entry var_1 already used! - trying var_2
+Found a valid exportable SQUASHFS superblock on /root/carpentian-build/image/casper/filesystem.squashfs.
+	Compression used xz
+	Inodes are compressed
+	Data is compressed
+	Fragments are compressed
+	Xattrs are compressed
+	Fragments are present in the filesystem
+	Always-use-fragments option is not specified
+	Duplicates are removed
+	Xattrs are stored
+	Filesystem size 2668887.23 Kbytes (2606.34 Mbytes)
+	Block size 1048576
+	Number of fragments 2791
+	Number of inodes 401333
+	Number of ids 39
+
+Parallel mksquashfs: Using 16 processors
+Scanning existing filesystem...
+Read existing filesystem, 401332 inodes scanned
+Appending to existing 4.0 filesystem on /root/carpentian-build/image/casper/filesystem.squashfs, block size 1048576
+All -b, -noI, -noD, -noF, -noX, -noId, -no-duplicates, -no-fragments,
+-always-use-fragments, -exportable and -comp options ignored
+
+If appending is not wanted, please re-run with -noappend specified!
+
+Recovery file "/root/squashfs_recovery_filesystem.squashfs_676" written
+If Mksquashfs aborts abnormally (i.e. power failure), run
+mksquashfs - /root/carpentian-build/image/casper/filesystem.squashfs -recover /root/squashfs_recovery_filesystem.squashfs_676
+to restore filesystem
+
+[-                                                               ]   0/385   0%Source directory entry proc already used! - trying proc_1
+Source directory entry proc_1 already used! - trying proc_2
+Source directory entry root already used! - trying root_1
+Source directory entry root_1 already used! - trying root_2
+Source directory entry opt already used! - trying opt_1
+Source directory entry opt_1 already used! - trying opt_2
+Source directory entry debootstrap already used! - trying debootstrap_1
+Source directory entry debootstrap_1 already used! - trying debootstrap_2
+Source directory entry usr already used! - trying usr_1
+Source directory entry usr_1 already used! - trying usr_2
+Source directory entry lib64 already used! - trying lib64_1
+Source directory entry lib64_1 already used! - trying lib64_2
+Source directory entry run already used! - trying run_1
+Source directory entry run_1 already used! - trying run_2
+Source directory entry sbin.usr-is-merged already used! - trying sbin.usr-is-merged_1
+Source directory entry sbin.usr-is-merged_1 already used! - trying sbin.usr-is-merged_2
+Source directory entry home already used! - trying home_1
+Source directory entry home_1 already used! - trying home_2
+Source directory entry sys already used! - trying sys_1
+Source directory entry sys_1 already used! - trying sys_2
+Source directory entry media already used! - trying media_1
+Source directory entry media_1 already used! - trying media_2
+Source directory entry lib already used! - trying lib_1
+Source directory entry lib_1 already used! - trying lib_2
+Source directory entry bin already used! - trying bin_1
+Source directory entry bin_1 already used! - trying bin_2
+Source directory entry  already used! - trying _1
+Source directory entry _1 already used! - trying _2
+Source directory entry dev already used! - trying dev_1
+Source directory entry dev_1 already used! - trying dev_2
+Source directory entry etc already used! - trying etc_1
+Source directory entry etc_1 already used! - trying etc_2
+Source directory entry tmp already used! - trying tmp_1
+Source directory entry tmp_1 already used! - trying tmp_2
+Source directory entry lib.usr-is-merged already used! - trying lib.usr-is-merged_1
+Source directory entry lib.usr-is-merged_1 already used! - trying lib.usr-is-merged_2
+Source directory entry sbin already used! - trying sbin_1
+Source directory entry sbin_1 already used! - trying sbin_2
+Source directory entry srv already used! - trying srv_1
+Source directory entry srv_1 already used! - trying srv_2
+Source directory entry bin.usr-is-merged already used! - trying bin.usr-is-merged_1
+Source directory entry bin.usr-is-merged_1 already used! - trying bin.usr-is-merged_2
+
+
+
+
+[==========-                                               ]  27100/150942  17%[================\                                         ]  43200/150942  28%[======================================-                   ] 103100/150942  68%[======================================|                   ] 103200/150942  68%[========================================================/ ] 150300/150942  99%Unrecognised xattr prefix system.posix_acl_access
+Unrecognised xattr prefix system.posix_acl_default
+
+[=========================================================/] 150942/150942 100%
+
+Exportable Squashfs 4.0 filesystem, xz compressed, data block size 1048576
+	compressed data, compressed metadata, compressed fragments,
+	compressed xattrs, compressed ids
+	duplicates are removed
+Filesystem size 2745723.77 Kbytes (2681.37 Mbytes)
+	12.77% of uncompressed filesystem size (21504229.39 Kbytes)
+Inode table size 4687850 bytes (4577.98 Kbytes)
+	20.74% of uncompressed inode table size (22602547 bytes)
+Directory table size 5770008 bytes (5634.77 Kbytes)
+	35.70% of uncompressed directory table size (16163213 bytes)
+Xattr table size 78 bytes (0.08 Kbytes)
+	97.50% of uncompressed xattr table size (80 bytes)
+Number of duplicate files found 316119
+Number of inodes 607980
+Number of files 439037
+Number of fragments 2829
+Number of symbolic links 119755
+Number of device nodes 24
+Number of fifo nodes 0
+Number of socket nodes 12
+Number of directories 49152
+Number of hard-links 113
+Number of ids (unique uids + gids) 39
+Number of uids 19
+	root (0)
+	polkitd (987)
+	_apt (42)
+	unknown (110)
+	unknown (1000)
+	landscape (101)
+	dnsmasq (999)
+	unknown (120)
+	unknown (114)
+	systemd-network (998)
+	unknown (116)
+	man (6)
+	unknown (121)
+	unknown (112)
+	geoclue (104)
+	unknown (118)
+	unknown (119)
+	avahi (105)
+	cups-pk-helper (102)
+Number of gids 31
+	root (0)
+	dip (30)
+	polkitd (987)
+	shadow (42)
+	render (990)
+	geoclue (110)
+	unknown (1000)
+	syslog (101)
+	systemd-journal (999)
+	nogroup (65534)
+	unknown (120)
+	lp (7)
+	unknown (114)
+	audio (29)
+	systemd-network (998)
+	crontab (997)
+	scanner (106)
+	video (44)
+	utmp (43)
+	mail (8)
+	staff (50)
+	rdma (109)
+	man (12)
+	unknown (123)
+	unknown (115)
+	landscape (103)
+	unknown (113)
+	unknown (122)
+	lpadmin (107)
+	adm (4)
+	_ssh (102)
++ cp /root/carpentian-build/image/casper/filesystem.squashfs /tmp/iso-build/iso/casper/
++ cp /root/carpentian-build/chroot/boot/vmlinuz-6.8.0-138-generic /tmp/iso-build/iso/casper/vmlinuz
++ cp /root/carpentian-build/chroot/boot/initrd.img-6.8.0-138-generic /tmp/iso-build/iso/casper/initrd.img
++ chroot /root/carpentian-build/chroot dpkg-query -W '--showformat=${Package} ${Version}\n'
++ cp /tmp/iso-build/iso/casper/filesystem.manifest /tmp/iso-build/iso/casper/filesystem.manifest-remove
++ for pkg in linux-image-$KVER-generic linux-headers-$KVER-generic
++ echo linux-image-6.8.0-138-generic
++ for pkg in linux-image-$KVER-generic linux-headers-$KVER-generic
++ echo linux-headers-6.8.0-138-generic
++ cp /usr/lib/ISOLINUX/isolinux.bin /tmp/iso-build/iso/isolinux/
++ cp /usr/lib/ISOLINUX/isohdpfx.bin /tmp/iso-build/iso/isolinux/
++ cp /usr/lib/syslinux/modules/bios/ldlinux.c32 /tmp/iso-build/iso/isolinux/
++ cp /usr/lib/syslinux/modules/bios/libcom32.c32 /tmp/iso-build/iso/isolinux/
++ cp /usr/lib/syslinux/modules/bios/libutil.c32 /tmp/iso-build/iso/isolinux/
++ cp /usr/lib/syslinux/modules/bios/menu.c32 /tmp/iso-build/iso/isolinux/
++ cp /usr/lib/syslinux/modules/bios/vesamenu.c32 /tmp/iso-build/iso/isolinux/
++ cp /usr/lib/syslinux/modules/bios/chain.c32 /tmp/iso-build/iso/isolinux/
++ cat
++ cat
++ grub-mkstandalone --format=x86_64-efi --output=/tmp/iso-build/efi.img --locales= --fonts= boot/grub/grub.cfg=/tmp/iso-build/iso/boot/grub/grub.cfg
++ dd if=/dev/zero of=/tmp/iso-build/esp.img bs=1M count=10
+10+0 records in
+10+0 records out
+10485760 bytes (10 MB, 10 MiB) copied, 0.0076493 s, 1.5 GB/s
++ mkfs.vfat /tmp/iso-build/esp.img
+mkfs.fat 4.2 (2021-01-31)
++ mkdir -p /tmp/iso-build/esp-mount
++ mount -o loop /tmp/iso-build/esp.img /tmp/iso-build/esp-mount
++ mkdir -p /tmp/iso-build/esp-mount/EFI/BOOT
++ cp /tmp/iso-build/efi.img /tmp/iso-build/esp-mount/EFI/BOOT/bootx64.efi
++ umount /tmp/iso-build/esp-mount
++ cp /tmp/iso-build/esp.img /tmp/iso-build/iso/efi.img
++ cp /tmp/iso-build/iso/boot/grub/grub.cfg /tmp/iso-build/iso/EFI/boot/grub.cfg
++ cat
++ mkdir -p /tmp/iso-build/iso/.disk
++ echo -n 'Carpentian 1.0'
++ echo -n test
++ echo full_cd/single
++ echo -n carpentian
++ echo -n carpentian
++ xorriso -as mkisofs -r -J -joliet-long -volid CARPENTIAN -o /root/carpentian-build/Carpentian-OS.iso -isohybrid-mbr /usr/lib/ISOLINUX/isohdpfx.bin -c isolinux/boot.cat -eltorito-boot isolinux/isolinux.bin -no-emul-boot -boot-load-size 4 -boot-info-table -eltorito-alt-boot -e efi.img -no-emul-boot -isohybrid-gpt-basdat /tmp/iso-build/iso
+xorriso 1.5.6 : RockRidge filesystem manipulator, libburnia project.
+
+Drive current: -outdev 'stdio:/root/carpentian-build/Carpentian-OS.iso'
+Media current: stdio file, overwriteable
+Media status : is blank
+Media summary: 0 sessions, 0 data blocks, 0 data,  939g free
+Added to ISO image: directory '/'='/tmp/iso-build/iso'
+xorriso : UPDATE :      30 files added in 1 seconds
+xorriso : UPDATE :      30 files added in 1 seconds
+xorriso : NOTE : Copying to System Area: 432 bytes from file '/usr/lib/ISOLINUX/isohdpfx.bin'
+libisofs: NOTE : Automatically adjusted MBR geometry to 1023/177/32
+libisofs: NOTE : Aligned image size to cylinder size by 437 blocks
+xorriso : UPDATE :  1.98% done
+xorriso : UPDATE :  34.18% done
+xorriso : UPDATE :  74.51% done
+ISO image produced: 1448568 sectors
+Written to medium : 1448568 sectors at LBA 0
+Writing to 'stdio:/root/carpentian-build/Carpentian-OS.iso' completed successfully.
+
++ echo ''
+
++ echo '=== ISO created ==='
+=== ISO created ===
++ ls -lh /root/carpentian-build/Carpentian-OS.iso
+-rw-r--r-- 1 root root 2.8G Aug 27 17:34 /root/carpentian-build/Carpentian-OS.iso
++ cp /root/carpentian-build/Carpentian-OS.iso /mnt/c/Users/PC-1.DESKTOP-421EUGM/Downloads/carpentian/Carpentian-OS.iso
++ echo '=== COPIED TO WINDOWS ==='
+=== COPIED TO WINDOWS ===
++ ls -lh /mnt/c/Users/PC-1.DESKTOP-421EUGM/Downloads/carpentian/Carpentian-OS.iso
+-rwxrwxrwx 1 root root 2.8G Aug 27 17:35 /mnt/c/Users/PC-1.DESKTOP-421EUGM/Downloads/carpentian/Carpentian-OS.iso
++ echo '=== DONE ==='
+=== DONE ===
