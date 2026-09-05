@@ -1,0 +1,28 @@
+---
+componentName: carpentian
+
+windowExpanding:    fullscreen
+
+strings:
+    productName:         Carpentian
+    shortProductName:    Carpentian
+    version:             24.04
+    shortVersion:        noble
+    versionedName:       Carpentian
+    shortVersionedName:  Carpentian 24.04
+    bootloaderEntryName: Carpentian
+    productUrl:          https://carpentian.local
+
+images:
+    productLogo:         "logo.png"
+    productIcon:         "icon.png"
+    productWelcome:      "welcome.png"
+
+slideshow:               "show.qml"
+
+slideshowAPI:            1
+
+style:
+   SidebarBackground:    "#2b2b2b"
+   SidebarText:          "#e8e8e8"
+   SidebarTextCurrent:   "#000000"
