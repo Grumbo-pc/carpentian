@@ -1,0 +1,8 @@
+[Sound Theme]
+Name=Vicious
+Comment=Custom system event auditory layout for Carpentian OS
+Inherits=freedesktop
+Directories=stereo
+
+[stereo]
+OutputProfile=stereo
